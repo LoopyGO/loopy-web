@@ -14,22 +14,14 @@ export default function Home() {
         <Card
           title="Modulo 1"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          href="/"
+          href=""
           size="md"
           progress={57}
         />
         <Card
           title="Modulo 1"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          href="/"
-          size="md"
-          status="locked"
-          progress={0}
-        />
-        <Card
-          title="Modulo 1"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          href="/"
+          href=""
           size="md"
           status="locked"
           progress={0}

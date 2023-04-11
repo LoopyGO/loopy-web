@@ -84,4 +84,4 @@ export const Card = (props: CardProps) => {
   )
 }
 
-Card.displayName = 'Button'
+Card.displayName = 'Card'
