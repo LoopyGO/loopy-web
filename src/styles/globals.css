@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Transitions*/
+  .transition-200 {
+    @apply transition-all duration-200 ease-out;
+  }
+
+
+}
+
+@layer utilities {
+  .btn-active {
+    @apply bg-base-5 text-base-12 rounded-lg hover:bg-base-6 
+  }
+}

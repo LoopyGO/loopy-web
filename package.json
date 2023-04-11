@@ -9,17 +9,41 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.17",
+    "@radix-ui/react-progress": "^1.0.2",
+    "@radix-ui/react-tabs": "^1.0.3",
     "@types/node": "18.15.11",
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
     "autoprefixer": "10.4.14",
-    "eslint": "8.38.0",
+    "clsx": "^1.2.1",
+    "eslint": "^7.23.0 || ^8.0.0",
     "eslint-config-next": "13.3.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
     "next": "13.3.0",
     "postcss": "8.4.21",
+    "prettier": "^2.6.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "tailwind-merge": "^1.12.0",
     "tailwindcss": "3.3.1",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "eslint": "8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7"
   }
 }
