@@ -16,7 +16,7 @@ export default function Home() {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           href="/"
           size="md"
-          progress={20}
+          progress={57}
         />
         <Card
           title="Modulo 1"
