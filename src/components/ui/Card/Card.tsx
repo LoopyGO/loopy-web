@@ -1,9 +1,8 @@
-import { twMerge } from 'tailwind-merge'
-import clsx from 'clsx'
 import Link from 'next/link'
 import { ComponentPropsWithoutRef } from 'react'
 import { LockClosedIcon } from '@heroicons/react/20/solid'
 import { Progress } from '../Progress'
+import { cn } from '@/utils'
 
 type Variant = 'unlocked' | 'locked'
 type Size = 'sm' | 'md' | 'lg'
@@ -23,54 +22,48 @@ export const Card = (props: CardProps) => {
   return (
     <Link
       {...cardProps}
-      className={twMerge(
-        clsx(
-          'w-full transition-200 relative flex flex-col items-start justify-between gap-4',
-          {
-            'py-4 px-6 rounded-lg': size === 'sm',
-            'py-6 px-6 rounded-lg': size === 'md',
-          },
-          {
-            'bg-base-6 hover:bg-base-7 hover:-translate-y-1': status === 'unlocked',
-            'bg-base-2 cursor-default': status === 'locked',
-          },
-          props.className,
-        ),
+      className={cn(
+        'w-full transition-200 relative flex flex-col items-start justify-between gap-2',
+        {
+          'py-4 px-6 rounded-lg': size === 'sm',
+          'py-6 px-6 rounded-lg': size === 'md',
+        },
+        {
+          'bg-base-6 hover:bg-base-7 hover:-translate-y-1': status === 'unlocked',
+          'bg-base-2 cursor-default': status === 'locked',
+        },
+        props.className,
       )}
     >
       <div className="flex flex-col items-start justify-center">
         <h1
-          className={twMerge(
-            clsx(
-              'font-bold text-base-12',
-              {
-                'text-base': size === 'sm',
-                'text-lg': size === 'md',
-              },
-              {
-                'text-base-12': status === 'unlocked',
-                'text-base-5': status === 'locked',
-              },
-              props.className,
-            ),
+          className={cn(
+            'font-bold text-base-12',
+            {
+              'text-base': size === 'sm',
+              'text-lg': size === 'md',
+            },
+            {
+              'text-base-12': status === 'unlocked',
+              'text-base-5': status === 'locked',
+            },
+            props.className,
           )}
         >
           {props.title}
         </h1>
         <p
-          className={twMerge(
-            clsx(
-              'line-clamp-2',
-              {
-                'text-sm': size === 'sm',
-                'text-base': size === 'md',
-              },
-              {
-                'text-base-11': status === 'unlocked',
-                'text-base-5': status === 'locked',
-              },
-              props.className,
-            ),
+          className={cn(
+            'line-clamp-2',
+            {
+              'text-sm': size === 'sm',
+              'text-base': size === 'md',
+            },
+            {
+              'text-base-11': status === 'unlocked',
+              'text-base-5': status === 'locked',
+            },
+            props.className,
           )}
         >
           {props.description}

@@ -1,9 +1,8 @@
 'use client'
 import React from 'react'
 import * as ProgressPrimitive from '@radix-ui/react-progress'
-import { twMerge } from 'tailwind-merge'
-import clsx from 'clsx'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import { cn } from '@/utils'
 
 type ProgressProps = {
   className?: string
@@ -15,20 +14,16 @@ export const Progress = ({ progress, className, indicatorClassName }: ProgressPr
   return (
     <div className="flex w-full gap-2 items-center h-4 justify-start relative">
       <ProgressPrimitive.Root
-        className={twMerge(
-          clsx('relative overflow-hidden bg-base-4 rounded-full w-full h-2', className),
-        )}
+        className={cn('relative overflow-hidden bg-base-4 rounded-full w-full h-2', className)}
         style={{
           transform: 'translateZ(0)',
         }}
         value={progress}
       >
         <ProgressPrimitive.Indicator
-          className={twMerge(
-            clsx(
-              'bg-primary w-full h-full transition-200 data-[value="100"]:bg-primary data-[value="0"]:bg-transparent',
-              indicatorClassName,
-            ),
+          className={cn(
+            'bg-primary w-full h-full transition-200 data-[value="100"]:bg-primary data-[value="0"]:bg-transparent',
+            indicatorClassName,
           )}
           style={{ transform: `translateX(-${100 - progress}%)` }}
         />

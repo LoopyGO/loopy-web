@@ -8,8 +8,11 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <div className="flex w-full">
+      <div className="w-full bg-green-500">asdsadasd</div>
+      <div className="flex-1 flex justify-center items-center w-full bg-red-500 p-8">
+        {children}
+      </div>
+    </div>
   )
 }
