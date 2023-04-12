@@ -11,7 +11,7 @@ export function TabsContainer() {
         defaultValue="carrear"
         className="flex w-full flex-col xl:flex-row justify-between h-full"
       >
-        <div className="flex flex-col w-full flex-1  xl:max-w-xs py-8 px-6 h-full justify-between items-start">
+        <div className="flex flex-col w-full flex-1 xl:max-w-xs py-8 px-6 h-full justify-between items-start">
           <div className="overflow-x-auto w-full ">
             <Tabs.List className="flex items-center w-full justify-start gap-2  whitespace-nowrap">
               <Tabs.Trigger value="carrear" asChild>
@@ -41,29 +41,11 @@ export function TabsContainer() {
                   Ranked Duo
                 </Button>
               </Tabs.Trigger>
-              <Tabs.Trigger value="duo" asChild>
-                <Button
-                  variant="secondary"
-                  size="sm"
-                  className="data-[state=active]:btn-active hover:bg-base-5 hover:text-base-12"
-                >
-                  Ranked Duo
-                </Button>
-              </Tabs.Trigger>
-              <Tabs.Trigger value="duo" asChild>
-                <Button
-                  variant="secondary"
-                  size="sm"
-                  className="data-[state=active]:btn-active hover:bg-base-5 hover:text-base-12"
-                >
-                  Ranked Duo
-                </Button>
-              </Tabs.Trigger>
             </Tabs.List>
           </div>
           <Tabs.Content
             value="carrear"
-            className="flex h-2/3 flex-col items-start justify-between data-[state=inactive]:hidden"
+            className="flex w-full h-2/3 flex-col items-start max-xl:gap-12 max-xl:pb-12 justify-between data-[state=inactive]:hidden"
           >
             <div>
               <h3 className="text-2xl leading-10">Carreira</h3>
@@ -77,21 +59,7 @@ export function TabsContainer() {
           </Tabs.Content>
           <Tabs.Content
             value="solo"
-            className="flex h-2/3 flex-col items-start justify-between data-[state=inactive]:hidden"
-          >
-            <div>
-              <h3 className="text-2xl leading-10">Ranked Solo</h3>
-              <p className="text-sm text-base-11">
-                Jogue agora seu modo carreira e suba para o próximo nivel Jogue agora seu modo
-              </p>
-            </div>
-            <Button variant="primary" size="md" fullWidth>
-              Jogar Agora
-            </Button>
-          </Tabs.Content>
-          <Tabs.Content
-            value="duo"
-            className="flex h-2/3 flex-col items-start justify-between data-[state=inactive]:hidden"
+            className="flex w-full h-2/3 flex-col items-start max-xl:gap-12 max-xl:pb-12 justify-between data-[state=inactive]:hidden"
           >
             <div>
               <h3 className="text-2xl leading-10">Ranked Duo</h3>
@@ -99,8 +67,22 @@ export function TabsContainer() {
                 Jogue agora seu modo carreira e suba para o próximo nivel Jogue agora seu modo
               </p>
             </div>
-            <Button variant="primary" size="md" fullWidth>
-              Jogar Agora
+            <Button variant="primary" size="md" fullWidth className="active:scale-95">
+              Procurar Partida
+            </Button>
+          </Tabs.Content>
+          <Tabs.Content
+            value="duo"
+            className="flex w-full h-2/3 flex-col items-start max-xl:gap-12 max-xl:pb-12 justify-between data-[state=inactive]:hidden"
+          >
+            <div>
+              <h3 className="text-2xl leading-10">Ranked Duo</h3>
+              <p className="text-sm text-base-11">
+                Jogue agora seu modo carreira e suba para o próximo nivel Jogue agora seu modo
+              </p>
+            </div>
+            <Button variant="primary" size="md" fullWidth className="active:scale-95">
+              Procurar Partida
             </Button>
           </Tabs.Content>
         </div>
@@ -155,103 +137,23 @@ export function TabsContainer() {
               size="sm"
             />
           </Tabs.Content>
-          <Tabs.Content value="solo" className="data grid grid-cols-1 2xl:grid-cols-2 gap-4">
+          <Tabs.Content value="solo" className="grid grid-cols-1 2xl:grid-cols-2 gap-4">
             <Card
               title="Module 1"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
               href="/"
               progress={100}
               status="unlocked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={100}
-              status="unlocked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={37}
-              status="unlocked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={0}
-              status="locked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={0}
-              status="locked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={0}
-              status="locked"
               size="sm"
             />
           </Tabs.Content>
-          <Tabs.Content value="duo" className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <Tabs.Content value="duo" className="grid grid-cols-1 2xl:grid-cols-2 gap-4">
             <Card
               title="Module 1"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
               href="/"
               progress={100}
               status="unlocked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={100}
-              status="unlocked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={37}
-              status="unlocked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={0}
-              status="locked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={0}
-              status="locked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={0}
-              status="locked"
               size="sm"
             />
           </Tabs.Content>
