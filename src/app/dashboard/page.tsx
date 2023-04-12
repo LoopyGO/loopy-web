@@ -9,8 +9,8 @@ import { TabsContainer } from '@/components/TabsContainer'
 
 export default function Dashboard() {
   return (
-    <main className="w-full">
-      <div className="max-w-7xl flex h-screen w-full flex-col gap-6  ">
+    <main className="w-full p-12 mt-12 flex justify-center items-center ">
+      <div className="max-w-7xl flex h-screen w-full flex-col gap-6 ">
         <Container className="justify-between items-center">
           <div className="flex items-center justify-start gap-6">
             <div>
@@ -78,7 +78,7 @@ export default function Dashboard() {
             />
           </Container>
         </div>
-        <div className="w-full h-full flex items-center justify-between gap-6">
+        <div className="w-full h-full flex items-center justify-between gap-6 pb-8">
           <TabsContainer />
           <Container className="flex-1 px-24 h-full">
             <h1>Table</h1>

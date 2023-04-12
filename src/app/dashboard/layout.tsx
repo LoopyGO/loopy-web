@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import '@/styles/globals.css'
+import { Sidebar } from '@/components/Sidebar'
 
 export const metadata = {
   title: 'Loopy',
@@ -9,8 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <div className="flex w-full">
-      <div className="w-full bg-green-500">asdsadasd</div>
-      <div className="flex-1 flex justify-center items-center w-full bg-red-500 p-8">
+      <div className="flex-1 xl:max-w-xs w-full max-w-[80px] transition-200">
+        <Sidebar />
+      </div>
+      <div className="flex-1 flex justify-center items-center w-full max-h-screen overflow-y-auto ">
         {children}
       </div>
     </div>

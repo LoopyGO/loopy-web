@@ -6,11 +6,14 @@ import { Button } from './ui/Button'
 
 export function TabsContainer() {
   return (
-    <Container className="h-full w-max p-0 overflow-hidden gap-0">
-      <Tabs.Root defaultValue="carrear" className="flex items-center justify-between h-full">
-        <div className="flex flex-col w-full p-8 h-full justify-between items-start">
-          <div>
-            <Tabs.List className="flex items-center justify-start gap-2">
+    <Container className="h-full w-full p-0 overflow-hidden ">
+      <Tabs.Root
+        defaultValue="carrear"
+        className="flex w-full flex-col xl:flex-row justify-between h-full"
+      >
+        <div className="flex flex-col w-full flex-1  xl:max-w-xs py-8 px-6 h-full justify-between items-start">
+          <div className="overflow-x-auto w-full ">
+            <Tabs.List className="flex items-center w-full justify-start gap-2  whitespace-nowrap">
               <Tabs.Trigger value="carrear" asChild>
                 <Button
                   variant="secondary"
@@ -27,6 +30,24 @@ export function TabsContainer() {
                   className="data-[state=active]:btn-active hover:bg-base-5 hover:text-base-12"
                 >
                   Ranked Solo
+                </Button>
+              </Tabs.Trigger>
+              <Tabs.Trigger value="duo" asChild>
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  className="data-[state=active]:btn-active hover:bg-base-5 hover:text-base-12"
+                >
+                  Ranked Duo
+                </Button>
+              </Tabs.Trigger>
+              <Tabs.Trigger value="duo" asChild>
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  className="data-[state=active]:btn-active hover:bg-base-5 hover:text-base-12"
+                >
+                  Ranked Duo
                 </Button>
               </Tabs.Trigger>
               <Tabs.Trigger value="duo" asChild>
@@ -83,8 +104,8 @@ export function TabsContainer() {
             </Button>
           </Tabs.Content>
         </div>
-        <div className="bg-base-3 max-w-2xl h-full p-6">
-          <Tabs.Content value="carrear" className="grid grid-cols-2 gap-4">
+        <div className="bg-base-3 max-w-3xl  xl:h-[520px] p-6 overflow-y-scroll">
+          <Tabs.Content value="carrear" className="grid grid-cols-1 2xl:grid-cols-2 gap-4">
             <Card
               title="Module 1"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -134,7 +155,7 @@ export function TabsContainer() {
               size="sm"
             />
           </Tabs.Content>
-          <Tabs.Content value="solo" className="grid grid-cols-2 gap-4">
+          <Tabs.Content value="solo" className="data grid grid-cols-1 2xl:grid-cols-2 gap-4">
             <Card
               title="Module 1"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -184,7 +205,7 @@ export function TabsContainer() {
               size="sm"
             />
           </Tabs.Content>
-          <Tabs.Content value="duo" className="grid grid-cols-2 gap-4">
+          <Tabs.Content value="duo" className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <Card
               title="Module 1"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
