@@ -22,6 +22,17 @@
         "maintenance",
         "doc"
       ]
+    },
+    {
+      "login": "ArielBetti",
+      "name": "Ariel Betti",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42379076?v=4",
+      "profile": "https://arielbetti.vercel.app/",
+      "contributions": [
+        "code",
+        "maintenance",
+        "doc"
+      ]
     }
   ]
 }
