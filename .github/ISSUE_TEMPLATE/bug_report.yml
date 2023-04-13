@@ -1,0 +1,22 @@
+name: Bug report
+description: File a bug report
+title: '[Bug]: '
+labels:
+  - needs triage
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking time to submit a bug report to us!
+  - type: textarea
+    attributes:
+      label: Current Behavior
+      description: A clear and concise description of the problem
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: What do you expect to have happened?
+    validations:
+      required: true
