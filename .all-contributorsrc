@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "revogabe",
+      "name": "Daniel Gabriel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56942108?v=4",
+      "profile": "https://codevize.dev",
+      "contributions": [
+        "code",
+        "maintenance",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "loopy-web",
+  "projectOwner": "Loopy-Learn"
+}
