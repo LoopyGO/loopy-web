@@ -39,6 +39,7 @@ Thanks goes to these wonderful people
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://codevize.dev"><img src="https://avatars.githubusercontent.com/u/56942108?v=4?s=100" width="100px;" alt="Daniel Gabriel"/><br /><sub><b>Daniel Gabriel</b></sub></a><br /><a href="https://github.com/Loopy-Learn/loopy-web/commits?author=revogabe" title="Code">💻</a> <a href="#maintenance-revogabe" title="Maintenance">🚧</a> <a href="https://github.com/Loopy-Learn/loopy-web/commits?author=revogabe" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://arielbetti.vercel.app/"><img src="https://avatars.githubusercontent.com/u/42379076?v=4?s=100" width="100px;" alt="Ariel Betti"/><br /><sub><b>Ariel Betti</b></sub></a><br /><a href="https://github.com/Loopy-Learn/loopy-web/commits?author=ArielBetti" title="Code">💻</a> <a href="#maintenance-ArielBetti" title="Maintenance">🚧</a> <a href="https://github.com/Loopy-Learn/loopy-web/commits?author=ArielBetti" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
