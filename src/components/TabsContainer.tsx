@@ -88,55 +88,19 @@ export function TabsContainer() {
         </div>
         <div className="bg-base-3 max-w-3xl  xl:h-[520px] p-6 overflow-y-scroll">
           <Tabs.Content value="carrear" className="grid grid-cols-1 2xl:grid-cols-2 gap-4">
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={100}
-              status="unlocked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={100}
-              status="unlocked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={37}
-              status="unlocked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={0}
-              status="locked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={0}
-              status="locked"
-              size="sm"
-            />
-            <Card
-              title="Module 1"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet, consectetur adipiscing elit."
-              href="/"
-              progress={0}
-              status="locked"
-              size="sm"
-            />
+            {/* {modules.map(({ name, id, description }: TModule) => (
+              <Card
+                key={id}
+                title={name}
+                description={description}
+                href="/"
+                progress={100}
+                status={userModule > id ? 'unlocked' : 'locked'}
+                size="sm"
+              />
+            ))} */}
           </Tabs.Content>
+          {/* CONTENT ABAIXO A FAZER */}
           <Tabs.Content value="solo" className="grid grid-cols-1 2xl:grid-cols-2 gap-4">
             <Card
               title="Module 1"

@@ -1,0 +1,15 @@
+{
+    "uuid": "123456789",
+    "name": "Daniel Gabriel",
+    "description": "Desenvolvedor Full-stack",
+    "tags": ["letscode", "phprip"],
+    "image": "https://github.com/revogabe.png",
+    "elo": "D2",
+    "position": 20,
+    "level": 34,
+    "module": 3,
+    
+    "leveXp": 31,
+    "xp": 85000
+}
+
