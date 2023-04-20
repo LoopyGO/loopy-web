@@ -1,7 +1,6 @@
 import React from 'react'
 import { UserIcon, HomeIcon } from '@heroicons/react/20/solid'
-
-// eslint-disable-next-line no-undef
+import { NavLink } from './NavLink'
 
 const links = {
   home: {
@@ -14,14 +13,6 @@ const links = {
     icon: <UserIcon width={24} height={24} />,
     label: 'User',
   },
-}
-
-function NavLink({ href, children }: { href: string; children: JSX.Element[] | JSX.Element }) {
-  return (
-    <a className="flex items-center gap-3 hover:bg-base-4 p-2 rounded-lg" href={href}>
-      {children}
-    </a>
-  )
 }
 
 export function Sidebar() {

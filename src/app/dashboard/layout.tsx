@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import '@/styles/globals.css'
-import { Sidebar } from '@/components/Sidebar'
+import { MobileSidebar, Sidebar } from '@/components/Sidebar'
 
 export const metadata = {
   title: 'Loopy',
@@ -9,7 +9,10 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex w-full">
+    <div className="flex max-sm:flex-col w-full">
+      <div className="flex-1 sm:hidden w-full transition-200">
+        <MobileSidebar />
+      </div>
       <div className="flex-1 xl:max-w-xs max-sm:hidden w-full max-w-[80px] transition-200">
         <Sidebar />
       </div>
