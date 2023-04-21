@@ -52,24 +52,3 @@ export function MobileSidebar() {
     </div>
   )
 }
-
-/* <nav>
-<ul className="flex gap-2">
-  {Object.values(links).map((link) => (
-    <li key={link.label}>
-      <NavLink href={link.href}>
-        {link.icon}
-        <p>{link.label}</p>
-      </NavLink>
-    </li>
-  ))}
-</ul>
-</nav>
-<div className="text-sm flex gap-1">
-<NavLink href="#">
-  <p>Changelog</p>
-</NavLink>
-<NavLink href="#">
-  <p>Share Feedback</p>
-</NavLink>
-  </div> */
